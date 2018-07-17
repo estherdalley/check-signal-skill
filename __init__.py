@@ -23,19 +23,19 @@ class CheckSignal(MycroftSkill):
             self.sig = int(_4G.response[8])
         # Get human-friendly value
         if self.sig > 98:
-            self.sigstr = "None"
+            self.sigstr = "none."
         elif self.sig < 2:
-            self.sigstr = "Error: 0"
+            self.sigstr = "Error: 0."
         elif self.sig < 10:
-            self.sigstr = "Marginal"
+            self.sigstr = "marginal."
         elif self.sig < 15:
-            self.sigstr = "OK"
+            self.sigstr = "OK."
         elif self.sig < 20:
-            self.sigstr = "Good"
+            self.sigstr = "good."
         elif self.sig > 19:
-            self.sigstr = "Excellent"
+            self.sigstr = "excellent."
         else:
-            self.sigstr = "Error: 1"
+            self.sigstr = "Error: 1."
             
         self.speak_dialog('signal.check', data={"sigstr": self.sigstr})
 
