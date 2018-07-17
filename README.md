@@ -1,8 +1,8 @@
 ## Check Signal
-Check signal strength on iotbit
+Check signal strength on IOTBit
 
 ## Description
-Check the signal strength of iotbit
+Mycroft skill for checking the signal strength of a connected IOTBit.
 
 ## Examples
  - "How good is my signal?"
